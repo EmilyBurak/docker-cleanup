@@ -4,10 +4,10 @@
 docker stop $(docker ps -a -q)
 docker rm $(docker ps -a -q)
 
-# #delete all images
+# delete all images
 docker rmi $(docker images -a -q)
 
-# # volumes
+# volumes
 docker volume prune -f
 
 # just to make sure
